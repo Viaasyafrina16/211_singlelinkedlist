@@ -33,7 +33,7 @@ nodeBaru->next = START;
     }
     Node* previous = START;
     Node* current = START;
-}
+
 
 
 while ((current != NULL) && (nim >= current->noMhs))
@@ -45,4 +45,8 @@ while ((current != NULL) && (nim >= current->noMhs))
     }
     previous = current;
     current = current->next;
+}
+
+nodeBaru->next = current;
+previous->next = nodeBaru;
 }
