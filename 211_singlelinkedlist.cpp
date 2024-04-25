@@ -80,7 +80,7 @@ bool deleteNode(int nim) {
         return false;
     previous->next = current->next;
     if (current == START)
-        START = current->;
+        START = current->next;
         return true;
 }
 bool listEmpty() {
